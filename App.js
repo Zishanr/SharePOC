@@ -55,10 +55,10 @@ export default class App extends PureComponent {
 
   _clickShare = base64Data => {
     let shareOptions = {
-      //title: "React Native",
-      //message: "Hola mundo http://facebook.github.io/react-native/",
-      url: `data:image/png;base64,${base64Data}`
-      //subject: "Share Link" //  for email
+      title: "React Native",
+      message: "Hola mundo http://facebook.github.io/react-native/",
+      url: `data:image/png;base64,${base64Data}`,
+      subject: "Share Link" //  for email
     };
     Share.open(shareOptions)
       .then(res => {
